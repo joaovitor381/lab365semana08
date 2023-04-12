@@ -34,7 +34,11 @@ function App() {
       <CardAdicionar adicionarTarefa={adicionarTarefa} />
       <ul>
         {listaDeTarefas.map((tarefa) => (
-          <ListItem key={tarefa.id} tarefa={tarefa} />
+          <ListItem
+            key={tarefa.id}
+            tarefa={tarefa}
+            removerTarefa={removerTarefa}
+          />
         ))}
       </ul>
     </div>
